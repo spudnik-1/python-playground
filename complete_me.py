@@ -1,14 +1,15 @@
 import json
 
-def greet(name):
+def greet(name): 
     '''
     Given a string, return the string "Hello, <the string goes here>! You are amazing :)"
     So given "Pickle" as input, the function should return "Hello, Pickle! You are amazing :)"
     '''
     
-    # PLEASE IMPLEMENT ME
+   
+    return "Hello, "+name+"! You are amazing :)"
 
-    return ""
+
 
 
 def how_hot_is_it(temp):
@@ -17,13 +18,18 @@ def how_hot_is_it(temp):
 
     "ICE ICE BABY" if the input is 0 or below.
     "Bring me a blanket" if the input is more than 0 but less than 20.
-    "Nice and cozy" if the input is more than 20 but less than 24.
+    "Nice and cozy" if the input is more than or equal to 20 but less than 24.
     "FEELIN' HOT HOT HOT" if the input is 24 or higher.
     '''
     
-    # PLEASE IMPLEMENT ME
-
-    return ""
+    if  temp <=0:
+        return "ICE ICE BABY"
+    if temp >0 and temp <20:
+        return "Bring me a blanket"
+    if temp >=20 and temp <24:
+        return "Nice and cozy"
+    if temp >=24:
+        return "FEELIN' HOT HOT HOT"
 
 
 def print_all_numbers_between_one_and_twenty_divisible_by_three():
